@@ -1,0 +1,18 @@
+{
+  "user": [
+    {
+      "id": "9761",
+      "name": "Richmond Andoh ",
+      "email": "richmondandoh00@gmail.com",
+      "password": "richy1234",
+      "confirmPassword": "richy1234"
+    },
+    {
+      "id": "b091",
+      "name": "David Andoh",
+      "email": "david123@gmail.com",
+      "password": "david123",
+      "confirmPassword": "david123"
+    }
+  ]
+}
