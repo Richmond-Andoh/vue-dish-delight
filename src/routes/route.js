@@ -1,6 +1,6 @@
 import SignUp from '@/components/SignUp.vue'
-import Home from '@/components/Home.vue'
-import Login from '@/components/Login.vue'
+import Home from '@/components/HomePage.vue'
+import Login from '@/components/LoginPage.vue'
 import NotFound from '@/components/NotFound.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 

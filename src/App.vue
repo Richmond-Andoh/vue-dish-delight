@@ -5,12 +5,12 @@
 </template>
 
 <script>
-import SignUpVue from './components/SignUp.vue'
+//import SignUp from './components/SignUp.vue'
 
 export default {
-  name: 'App',
-  components: {
-    SignUpVue
-  }
+  name: 'App'
+  // components: {
+  //   SignUp
+  // }
 }
 </script>

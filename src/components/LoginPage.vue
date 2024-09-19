@@ -51,7 +51,9 @@
 </template>
 
 <script>
+//import router from '@/routes/route';
 import axios from 'axios'
+//import bcrypt from 'bcryptjs'
 
 export default {
   data() {
@@ -63,8 +65,36 @@ export default {
   },
   methods: {
     async handleLogin() {
-      // Validate and handle login
-      alert('Login successful')
+      const users = localStorage.getItem('users')
+
+      const { email, password } = JSON.parse(users)
+
+      if (this.email !== email && this.password !== password) throw new Error('Invalid Credentials')
+      try {
+        // Validate and handle login
+        //const hashPassword = await bcrypt.hash(this.password, 10)
+
+        const res = await axios.post('http://localhost:3000/login', {
+          email: this.email,
+          password: this.password
+        })
+
+        if (res.status === 201) {
+          localStorage.setItem('loggedIn-users', JSON.stringify(res))
+          this.$router.push('/')
+        }
+
+        //console.warn(users)
+      } catch (error) {
+        console.log(error.message)
+      }
+    }
+  },
+
+  mounted() {
+    const user = localStorage.getItem('users')
+    if (user) {
+      this.$router.push('/')
     }
   }
 }

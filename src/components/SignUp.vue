@@ -82,18 +82,22 @@ export default {
 
   methods: {
     async registerUser() {
-      if (this.password !== this.confirmPassword) {
-        // register user logic here
-        confirm('Password do not match my brother')
-        return
-      }
-
       try {
+        if (this.password !== this.confirmPassword) {
+          confirm('Password do not match my brother')
+          return
+        }
+
+        if (this.name === '' || this.email === '' || (this.password && this.confirmPassword === ''))
+          return confirm('All Fields Must Be Filled')
+
+        // Hash Password before sending to API
+        const hashPassword = await bcrypt.hash(this.password, 10)
         const res = await axios.post('http://localhost:3000/user', {
           name: this.name,
           email: this.email,
-          password: this.password,
-          confirmPassword: this.confirmPassword
+          password: hashPassword,
+          confirmPassword: hashPassword
         })
 
         const users = res.data

@@ -1,18 +1,26 @@
 {
   "user": [
     {
-      "id": "9761",
+      "id": "e1ae",
       "name": "Richmond Andoh ",
       "email": "richmondandoh00@gmail.com",
-      "password": "richy1234",
-      "confirmPassword": "richy1234"
+      "password": "$2a$10$/.gPxEmB8hrWLP5SIdS6cOzZNAbe60ZYScIJXiryWsid2Hfm0QWxu",
+      "confirmPassword": "$2a$10$/.gPxEmB8hrWLP5SIdS6cOzZNAbe60ZYScIJXiryWsid2Hfm0QWxu"
     },
     {
-      "id": "b091",
-      "name": "David Andoh",
-      "email": "david123@gmail.com",
-      "password": "david123",
-      "confirmPassword": "david123"
+      "id": "f899",
+      "name": "Eric Ofori",
+      "email": "eric123@gmail.com",
+      "password": "$2a$10$CNcybaV0R9DknRZAY9JGSuRNGp4Wl/lOdf7smxvK2h10I26A7hO8i",
+      "confirmPassword": "$2a$10$CNcybaV0R9DknRZAY9JGSuRNGp4Wl/lOdf7smxvK2h10I26A7hO8i"
+    },
+    {
+      "id": "30a1",
+      "name": "Richmond Andoh ",
+      "email": "richmondandoh00@gmail.com",
+      "password": "$2a$10$zNBeRZU.HP84nXGlrHITieSHTCthZxRK/S2DH2tv5akadpBWaOigu",
+      "confirmPassword": "$2a$10$zNBeRZU.HP84nXGlrHITieSHTCthZxRK/S2DH2tv5akadpBWaOigu"
     }
-  ]
+  ],
+  "login": []
 }
